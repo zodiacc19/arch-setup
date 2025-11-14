@@ -33,7 +33,7 @@ run_script() {
 clear
 echo -e "${GREEN}🌟 Iniciando execução dos scripts...${RESET}"
 
-run_script "scripts/install-apps.sh"
+run_script "scripts/install.apps.sh"
 run_script "scripts/setup-auto-exfat.sh"
 
 print_section "✅ Todos os scripts foram executados com sucesso!"
