@@ -25,16 +25,13 @@ PACMAN_PKGS=(
   gwenview
   reaper
   elisa
-  kdenlive
   gimp
   krita
   inkscape
   qbittorrent
   discord
   telegram-desktop
-  thunderbird
   partitionmanager
-  filelight
   keepassxc
   kalk
   gufw
