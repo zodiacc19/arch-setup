@@ -17,6 +17,9 @@ RESET="\e[0m"
 
 # Lista de pacotes oficiais (pacman)
 PACMAN_PKGS=(
+  firefox 
+  libreoffice-fresh 
+  libreoffice-fresh-pt-br
   noto-fonts-cjk
   noto-fonts-emoji
   ttf-dejavu
