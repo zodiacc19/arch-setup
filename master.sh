@@ -70,6 +70,6 @@ run_script "scripts/setup-auto-exfat.sh"
 
 # 2️⃣ Scripts que usam yay (executados como usuário normal)
 run_script "scripts/yay/docker-in.sh" user
-run_script "scripts/yay/yay-apps.sh" user
+# run_script "scripts/yay/yay-apps.sh" user
 
 print_section "✅ Todos os scripts foram executados com sucesso!"
