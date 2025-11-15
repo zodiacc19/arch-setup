@@ -2,52 +2,55 @@
 # ============================================================
 # 🐳 Instalação automatizada do Docker Desktop no Arch Linux
 # ------------------------------------------------------------
-# - Instala o Docker Desktop via AUR (yay)
-# - Escolhe qemu-base automaticamente
-# - Adiciona o usuário atual ao grupo docker
-# - Desativa a inicialização automática do serviço
+# - Instala Docker Desktop via AUR (yay)
+# - Usa qemu-base
+# - Remove qualquer autostart do desktop
+# - Desativa serviço + socket
+# - Adiciona usuário ao grupo docker
 # ============================================================
 
-set -e  # Para o script se algo falhar
+set -e  # Pare em qualquer erro
 
-echo "🚀 Iniciando instalação do Docker Desktop no Arch Linux..."
+echo "🚀 Instalando Docker Desktop no Arch Linux..."
 
-# Verifica se o yay está instalado
+# Garante que o script está rodando como bash
+if [ -z "$BASH_VERSION" ]; then
+    echo "Re-executando com bash..."
+    exec bash "$0" "$@"
+fi
+
+# Valida yay
 if ! command -v yay &> /dev/null; then
-    echo "❌ 'yay' não encontrado. Instale-o antes de rodar este script."
+    echo "❌ 'yay' não encontrado. Instale-o antes de rodar o script."
     exit 1
 fi
 
-# Instalar o Docker Desktop com yay
-echo "📦 Instalando Docker Desktop via AUR..."
+# Pega o usuário real mesmo dentro de setups automatizados
+REAL_USER="${SUDO_USER:-$USER}"
+
+echo "📦 Instalando Docker Desktop + qemu-base..."
 yay -S --noconfirm --needed docker-desktop qemu-base
 
-# Desativar inicialização automática (caso esteja ativa)
-echo "⚙️ Desativando inicialização automática do Docker Desktop..."
-systemctl --user disable docker-desktop 2>/dev/null || true
+echo "🔧 Desabilitando serviços..."
+systemctl --user disable docker-desktop.service 2>/dev/null || true
+systemctl --user disable docker-desktop.socket 2>/dev/null || true
+systemctl --user stop docker-desktop.service 2>/dev/null || true
+systemctl --user stop docker-desktop.socket 2>/dev/null || true
 
-# Garantir que o Docker Desktop não está rodando
-echo "🛑 Parando serviço do Docker Desktop (se estiver ativo)..."
-systemctl --user stop docker-desktop 2>/dev/null || true
+# Remove autostart criado pelo pacote
+echo "🧹 Removendo autostart..."
+rm -f "/home/$REAL_USER/.config/autostart/docker-desktop.desktop" 2>/dev/null || true
 
-# Adicionar o usuário atual ao grupo docker
-echo "👤 Adicionando o usuário '$USER' ao grupo 'docker'..."
-sudo usermod -aG docker "$USER"
+# Adiciona ao grupo docker
+echo "👤 Adicionando '$REAL_USER' ao grupo docker..."
+sudo usermod -aG docker "$REAL_USER"
 
-# Exibir instruções finais
 echo ""
-echo "✅ Instalação concluída!"
-echo "⚙️ O Docker Desktop foi instalado e o autostart está desativado."
+echo "✅ Docker Desktop instalado e autostart desativado!"
+echo "🔁 Faça logout/login ou reinicie para ativar o grupo docker."
 echo ""
-echo "🔁 Para aplicar as permissões do grupo docker, faça logout/login (ou reinicie)."
-echo ""
-echo "▶️ Para iniciar manualmente o Docker Desktop, use:"
+echo "▶️ Para iniciar manualmente:"
 echo "    systemctl --user start docker-desktop"
 echo ""
-echo "🧰 Para verificar o status:"
-echo "    systemctl --user status docker-desktop"
-echo ""
-echo "🐋 Para testar o Docker:"
+echo "🐋 Testar Docker:"
 echo "    docker run hello-world"
-echo ""
-echo "💡 Dica: Você pode abrir o Docker Desktop pelo menu do KDE/GNOME quando quiser."
