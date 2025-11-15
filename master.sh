@@ -10,11 +10,14 @@ YELLOW="\033[1;33m"
 BLUE="\033[1;34m"
 RESET="\033[0m"
 
+# ---------- Diretório real do script ----------
+BASE_DIR="$(cd "$(dirname "$0")" && pwd)"
+
 # --------------- Pré-ajustes ----------------
 
 # Converte scripts criados no Windows (CRLF → LF)
 if command -v dos2unix >/dev/null 2>&1; then
-    find scripts -type f -name "*.sh" -exec dos2unix {} \; 2>/dev/null || true
+    find "$BASE_DIR/scripts" -type f -name "*.sh" -exec dos2unix {} \; 2>/dev/null || true
 fi
 
 # --------------- Funções ----------------
@@ -65,11 +68,11 @@ clear
 echo -e "${GREEN}🌟 Iniciando execução dos scripts...${RESET}"
 
 # 1️⃣ Scripts que rodam como root
-run_script "scripts/install.apps.sh"
-run_script "scripts/setup-auto-exfat.sh"
+run_script "$BASE_DIR/scripts/install.apps.sh"
+run_script "$BASE_DIR/scripts/setup-auto-exfat.sh"
 
 # 2️⃣ Scripts que usam yay (executados como usuário normal)
-run_script "scripts/yay/docker-in.sh" user
-# run_script "scripts/yay/yay-apps.sh" user
+run_script "$BASE_DIR/scripts/yay/docker-in.sh" user
+# run_script "$BASE_DIR/scripts/yay/yay-apps.sh" user
 
 print_section "✅ Todos os scripts foram executados com sucesso!"
