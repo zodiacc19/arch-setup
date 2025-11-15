@@ -1,7 +1,7 @@
 #!/bin/bash
 # script_mestre.sh — executa scripts como root e scripts yay como usuário
 
-set -e  # Para execução se algo der errado
+set -e  # Para parar se ocorrer erro
 
 # ---------------- Cores ----------------
 GREEN="\033[1;32m"
@@ -9,6 +9,13 @@ RED="\033[1;31m"
 YELLOW="\033[1;33m"
 BLUE="\033[1;34m"
 RESET="\033[0m"
+
+# --------------- Pré-ajustes ----------------
+
+# Converte scripts criados no Windows (CRLF → LF)
+if command -v dos2unix >/dev/null 2>&1; then
+    find scripts -type f -name "*.sh" -exec dos2unix {} \; 2>/dev/null || true
+fi
 
 # --------------- Funções ----------------
 
@@ -18,17 +25,17 @@ print_section() {
     echo -e "${BLUE}====================================================${RESET}\n"
 }
 
-# Executa script como root ou usuário normal
+# Executa script como root ou como usuário normal
 run_script() {
     local script_name=$1
     local mode=$2  # "user" ou vazio
 
     print_section "Executando: $script_name"
 
-    # Caso o script precise rodar como usuário normal
+    # Executar como usuário normal
     if [[ "$mode" == "user" ]]; then
         if [[ -z "$SUDO_USER" ]]; then
-            echo -e "${RED}✖ ERRO: Este script deve ser executado usando sudo.${RESET}"
+            echo -e "${RED}✖ ERRO: Rode este script usando sudo!${RESET}"
             exit 1
         fi
 
@@ -41,7 +48,7 @@ run_script() {
             exit 1
         fi
 
-    # Caso seja script root
+    # Executar como root
     else
         if bash "$script_name"; then
             echo -e "${GREEN}✔ $script_name concluído com sucesso!${RESET}\n"
@@ -52,7 +59,7 @@ run_script() {
     fi
 }
 
-# ---------------- Execução ----------------
+# ---------------- Execução Principal ----------------
 
 clear
 echo -e "${GREEN}🌟 Iniciando execução dos scripts...${RESET}"
@@ -61,9 +68,8 @@ echo -e "${GREEN}🌟 Iniciando execução dos scripts...${RESET}"
 run_script "scripts/install.apps.sh"
 run_script "scripts/setup-auto-exfat.sh"
 
-# 2️⃣ Script que contém yay (roda como usuário)
+# 2️⃣ Scripts que usam yay (executados como usuário normal)
 run_script "scripts/yay/docker-in.sh" user
 run_script "scripts/yay/yay-apps.sh" user
-
 
 print_section "✅ Todos os scripts foram executados com sucesso!"
