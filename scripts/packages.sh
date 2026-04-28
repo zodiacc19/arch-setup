@@ -82,6 +82,7 @@ PACMAN_PKGS=(
   # Comunicação
   discord
   telegram-desktop
+  thunderbird
   
   # Bancos de dados
   postgresql
