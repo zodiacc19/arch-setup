@@ -132,7 +132,6 @@ AUR_PKGS=(
   caido-desktop
   goanime
   jetbrains-toolbox
-  google-chrome
 )
 
 # Verifica se é root
