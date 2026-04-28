@@ -132,7 +132,6 @@ AUR_PKGS=(
   caido-desktop
   google-chrome
   goanime
-  warp-terminal
   jetbrains-toolbox
 )
 
