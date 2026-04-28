@@ -46,6 +46,7 @@ PACMAN_PKGS=(
   fish
   fzf
   eza
+  less
   zoxide
   zsh
   zsh-autosuggestions
