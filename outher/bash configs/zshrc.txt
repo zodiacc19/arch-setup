@@ -1,0 +1,10 @@
+# Plugins
+source /usr/share/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
+source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+
+# Prompt estilo Kali clássico: user@host:path# (em cores)
+PROMPT='%F{%(#.red.blue)}%n@%m%f:%F{%(#.red.blue)}%~%f%# '
+
+alias msf='msfdb start && msfconsole'
+
+eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv zsh)"

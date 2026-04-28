@@ -1,0 +1,98 @@
+## Configs
+-----------------------------------
+
+sudo usermod -aG docker $USER && \
+sudo systemctl start docker.service && \
+sudo systemctl enable docker.service && \
+sudo modprobe vboxdrv && \
+sudo usermod -aG vboxusers $USER && \
+sudo usermod -aG wireshark $USER && \
+sudo -iu postgres initdb --locale $LANG -D /var/lib/postgres/data && \
+sudo systemctl start postgresql && \
+sudo systemctl enable postgresql
+
+## Metasploif Framework Setup
+-----------------------------------
+
+sudo -iu postgres initdb --locale $LANG -D /var/lib/postgres/data
+
+sudo systemctl enable postgresql
+sudo systemctl start postgresql
+
+## Configurar repositório - Black Arch (opicional)
+-----------------------------------
+
+# Run https://blackarch.org/strap.sh as root and follow the instructions.
+curl -O https://blackarch.org/strap.sh
+
+# Verify the SHA1 sum
+echo 00688950aaf5e5804d2abebb8d3d3ea1d28525ed strap.sh | sha1sum -c
+
+# Set execute bit
+chmod +x strap.sh
+
+# Run strap.sh
+sudo ./strap.sh
+
+# Enable multilib following https://wiki.archlinux.org/index.php/Official_repositories#Enabling_multilib and run:
+sudo pacman -Syu
+
+## Pacotes Black Arch
+-----------------------------------
+
+# Tools Black Arch Básicas - (Recomendado)
+
+sudo pacman -S \
+amass \
+dnsenum \
+steghide \
+subfinder \
+sherlock \
+outguess \
+dnsmap \
+wafw00f \
+sqlmap \
+crunch \
+cewl \
+kismet \
+bettercap \
+aircrack-ng \
+theharvester
+
+-----------------------------------
+
+
+# Tools Black Arch Avançadas
+
+
+sudo pacman -S \
+airgeddon \
+amass \
+dnsenum \
+maltego \
+steghide \
+subfinder \
+sherlock \
+outguess \
+dnsmap \
+wafw00f \
+sqlmap \
+crunch \
+cewl \
+netexec \
+kismet \
+bettercap \
+aircrack-ng \
+ettercap \
+hostapd \
+dnsmasq \
+hcxdumptool \
+hcxtools \
+bully \
+pixiewps \
+reaver \
+hashcat \
+tcpdump \
+mdk4
+
+-----------------------------------
