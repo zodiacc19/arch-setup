@@ -82,7 +82,6 @@ PACMAN_PKGS=(
   # Comunicação
   discord
   telegram-desktop
-  thunderbird
   
   # Bancos de dados
   postgresql
@@ -131,9 +130,9 @@ AUR_PKGS=(
   virtualbox-ext-oracle
   brave-bin
   caido-desktop
-  google-chrome
   goanime
   jetbrains-toolbox
+  google-chrome
 )
 
 # Verifica se é root
