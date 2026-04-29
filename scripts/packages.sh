@@ -48,6 +48,7 @@ PACMAN_PKGS=(
   eza
   less
   zoxide
+  starship
   zsh
   zsh-autosuggestions
   zsh-syntax-highlighting
