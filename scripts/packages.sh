@@ -57,6 +57,7 @@ PACMAN_PKGS=(
   jdk11-openjdk
   jdk-openjdk
   rust
+  php
   lazygit
 
   # Containers / DevOps
