@@ -61,6 +61,7 @@ PACMAN_PKGS=(
   lazygit
   nodejs
   nvm
+  typescript
   neovim
 
   # Containers / DevOps
