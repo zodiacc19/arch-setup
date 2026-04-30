@@ -59,6 +59,8 @@ PACMAN_PKGS=(
   rust
   php
   lazygit
+  nodejs
+  nvm
 
   # Containers / DevOps
   docker
