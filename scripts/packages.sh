@@ -81,6 +81,7 @@ PACMAN_PKGS=(
   metasploit
   veracrypt
   keepassxc
+  whois
   
   # Navegadores
   chromium
