@@ -140,6 +140,7 @@ AUR_PKGS=(
   caido-desktop
   goanime
   jetbrains-toolbox
+  gitkraken
 )
 
 # Verifica se é root
