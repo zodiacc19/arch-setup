@@ -129,6 +129,7 @@ PACMAN_PKGS=(
 
   # IA
   ollama
+  gemini-cli
 )
 
 # Lista de pacotes do AUR
