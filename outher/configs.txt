@@ -1,5 +1,5 @@
-## Configs
------------------------------------
+## Configs ##
+------------------------------------------------------------------------------------------------------------------------
 
 sudo usermod -aG docker $USER && \
 sudo systemctl start docker.service && \
@@ -11,16 +11,8 @@ sudo -iu postgres initdb --locale $LANG -D /var/lib/postgres/data && \
 sudo systemctl start postgresql && \
 sudo systemctl enable postgresql
 
-## Metasploif Framework Setup
------------------------------------
-
-sudo -iu postgres initdb --locale $LANG -D /var/lib/postgres/data
-
-sudo systemctl enable postgresql
-sudo systemctl start postgresql
-
-## Configurar repositório - Black Arch (opicional)
------------------------------------
+## Configurar repositório - Black Arch (opicional) ##
+------------------------------------------------------------------------------------------------------------------------
 
 # Run https://blackarch.org/strap.sh as root and follow the instructions.
 curl -O https://blackarch.org/strap.sh
@@ -37,8 +29,8 @@ sudo ./strap.sh
 # Enable multilib following https://wiki.archlinux.org/index.php/Official_repositories#Enabling_multilib and run:
 sudo pacman -Syu
 
-## Pacotes Black Arch
------------------------------------
+## Pacotes Black Arch ##
+------------------------------------------------------------------------------------------------------------------------
 
 # Tools Black Arch Básicas - (Recomendado)
 
@@ -59,11 +51,8 @@ bettercap \
 aircrack-ng \
 theharvester
 
------------------------------------
-
-
-# Tools Black Arch Avançadas
-
+# Tools Black Arch Avançadas ##
+------------------------------------------------------------------------------------------------------------------------
 
 sudo pacman -S \
 airgeddon \
@@ -95,4 +84,5 @@ hashcat \
 tcpdump \
 mdk4
 
------------------------------------
+------------------------------------------------------------------------------------------------------------------------
+
