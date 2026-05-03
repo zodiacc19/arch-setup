@@ -145,6 +145,7 @@ AUR_PKGS=(
   goanime
   jetbrains-toolbox
   gitkraken
+  openai-codex-bin
 )
 
 # Verifica se é root
