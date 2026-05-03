@@ -146,6 +146,7 @@ AUR_PKGS=(
   jetbrains-toolbox
   gitkraken
   openai-codex-bin
+  claude-code
 )
 
 # Verifica se é root
