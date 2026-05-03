@@ -101,6 +101,7 @@ PACMAN_PKGS=(
 
   # Áudio / Vídeo
   audacity
+  reaper
   termusic
   ffmpeg
   gst-plugins-good
@@ -130,6 +131,7 @@ PACMAN_PKGS=(
   # IA
   ollama
   gemini-cli
+  opencode
 )
 
 # Lista de pacotes do AUR
