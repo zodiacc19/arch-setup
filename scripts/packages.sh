@@ -144,7 +144,6 @@ AUR_PKGS=(
   caido-desktop
   goanime
   jetbrains-toolbox
-  gitkraken
   openai-codex-bin
   claude-code
 )
