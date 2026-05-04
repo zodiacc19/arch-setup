@@ -59,7 +59,6 @@ PACMAN_PKGS=(
   rust
   php
   lazygit
-  ruby
   nodejs
   nvm
   npm
