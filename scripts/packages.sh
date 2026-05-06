@@ -41,6 +41,7 @@ PACMAN_PKGS=(
   filelight
   partitionmanager
   elisa
+  kid3
 
   # Shells 
   fish
