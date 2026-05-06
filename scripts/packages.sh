@@ -147,6 +147,7 @@ AUR_PKGS=(
   jetbrains-toolbox
   openai-codex-bin
   claude-code
+  dropbox
 )
 
 # Verifica se é root
