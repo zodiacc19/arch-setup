@@ -144,6 +144,7 @@ AUR_PKGS=(
   brave-bin
   caido-desktop
   goanime
+  google-chrome
   jetbrains-toolbox
   openai-codex-bin
   claude-code
