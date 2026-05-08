@@ -103,7 +103,6 @@ PACMAN_PKGS=(
   # Áudio / Vídeo
   audacity
   reaper
-  termusic
   ffmpeg
   gst-plugins-good
   gst-plugins-bad
