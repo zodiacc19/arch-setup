@@ -15,36 +15,30 @@ sudo systemctl enable postgresql
 ------------------------------------------------------------------------------------------------------------------------
 
 # Run https://blackarch.org/strap.sh as root and follow the instructions.
-curl -O https://blackarch.org/strap.sh
 
-# Verify the SHA1 sum
-echo 00688950aaf5e5804d2abebb8d3d3ea1d28525ed strap.sh | sha1sum -c
-
-# Set execute bit
-chmod +x strap.sh
-
-# Run strap.sh
-sudo ./strap.sh
-
-# Enable multilib following https://wiki.archlinux.org/index.php/Official_repositories#Enabling_multilib and run:
+curl -O https://blackarch.org/strap.sh && \
+chmod +x strap.sh && \
+sudo ./strap.sh && \
 sudo pacman -Syu
+
 
 ## Pacotes Black Arch ##
 ------------------------------------------------------------------------------------------------------------------------
 
 # Tools Black Arch Básicas - (Recomendado)
 
-sudo pacman -S \
-amass \
-steghide \
-sherlock \
-outguess \
-dnsmap \
-wafw00f \
-sqlmap \
+sudo pacman -S \ 
 bettercap \
+amass \
+sherlock \ 
+dnsmap \
+dnsenum \ 
+theharvester \
+subfinder \
+wafw00f \
 aircrack-ng \
-theharvester
+sqlmap \
+wifite
 
 # Tools Black Arch Avançadas ##
 ------------------------------------------------------------------------------------------------------------------------
