@@ -36,17 +36,12 @@ sudo pacman -Syu
 
 sudo pacman -S \
 amass \
-dnsenum \
 steghide \
-subfinder \
 sherlock \
 outguess \
 dnsmap \
 wafw00f \
 sqlmap \
-crunch \
-cewl \
-kismet \
 bettercap \
 aircrack-ng \
 theharvester
