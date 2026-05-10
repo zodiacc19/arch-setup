@@ -148,6 +148,7 @@ AUR_PKGS=(
   openai-codex-bin
   claude-code
   dropbox
+  spotify
 )
 
 # Verifica se é root
