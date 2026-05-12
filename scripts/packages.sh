@@ -104,6 +104,7 @@ PACMAN_PKGS=(
   audacity
   reaper
   ffmpeg
+  ffmpegthumbs
   gst-plugins-good
   gst-plugins-bad
   gst-plugins-ugly
