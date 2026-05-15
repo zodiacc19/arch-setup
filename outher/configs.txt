@@ -27,7 +27,7 @@ sudo pacman -Syu
 
 # Tools Black Arch Básicas - (Recomendado)
 
-sudo pacman -S bettercap amass sherlock dnsmap dnsenum theharvester subfinder wafw00f aircrack-ng sqlmap wifite outguess steghide set
+sudo pacman -S bettercap amass sherlock dnsmap dnsenum theharvester subfinder wafw00f aircrack-ng sqlmap wifite outguess steghide set spiderfoot maigret
 
 # Tools Black Arch Avançadas ##
 ------------------------------------------------------------------------------------------------------------------------
