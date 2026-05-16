@@ -76,6 +76,7 @@ PACMAN_PKGS=(
 
   # Segurança / Hacking
   nmap
+  nikto
   hydra
   openbsd-netcat
   wireshark-qt
