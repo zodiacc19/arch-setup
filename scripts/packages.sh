@@ -86,6 +86,7 @@ PACMAN_PKGS=(
   veracrypt
   keepassxc
   whois
+  gobuster
   
   # Navegadores
   chromium
