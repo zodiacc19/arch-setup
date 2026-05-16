@@ -77,6 +77,7 @@ PACMAN_PKGS=(
   # Segurança / Hacking
   nmap
   nikto
+  tcpdump
   medusa
   exploitdb
   hydra
