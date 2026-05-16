@@ -78,6 +78,7 @@ PACMAN_PKGS=(
   nmap
   nikto
   medusa
+  exploitdb
   hydra
   openbsd-netcat
   wireshark-qt
