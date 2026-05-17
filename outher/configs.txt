@@ -46,7 +46,8 @@ hostapd \
 reaver \
 mdk4 \
 hcxdumptool \
-lighttpd
+lighttpd \
+crunch
 
 
 # Tools Black Arch Avançadas ##
