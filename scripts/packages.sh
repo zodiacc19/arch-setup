@@ -135,9 +135,6 @@ PACMAN_PKGS=(
   qbittorrent
 
   # IA
-  ollama
-  gemini-cli
-  opencode
 )
 
 # Lista de pacotes do AUR
@@ -148,11 +145,8 @@ AUR_PKGS=(
   virtualbox-ext-oracle
   brave-bin
   caido-desktop
-  goanime
   google-chrome
   jetbrains-toolbox
-  openai-codex-bin
-  claude-code
   dropbox
   spotify
 )
