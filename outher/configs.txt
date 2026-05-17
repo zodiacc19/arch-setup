@@ -20,19 +20,53 @@ curl -O https://blackarch.org/strap.sh && \
 chmod +x strap.sh && \
 sudo ./strap.sh && \
 sudo pacman -Syu
-
+sudo pacman -S \
+bettercap \
+amass \
+dnsmap \
+dnsenum \
+dnsmasq \
+theharvester \
+subfinder \
+wafw00f \
+aircrack-ng \
+sqlmap \
+wifite \
+outguess \
+steghide \
+set \
+recon-ng \
+responder \
+ngrok
 
 ## Pacotes Black Arch ##
 ------------------------------------------------------------------------------------------------------------------------
 
 # Tools Black Arch Básicas - (Recomendado)
 
-sudo pacman -S bettercap amass sherlock dnsmap dnsenum theharvester subfinder wafw00f aircrack-ng sqlmap wifite outguess steghide set recon-ng hashid evil-winrm ngrok responder
-
+sudo pacman -S \
+bettercap \
+amass \
+dnsmap \
+dnsenum \
+dnsmasq \
+theharvester \
+subfinder \
+wafw00f \
+aircrack-ng \
+sqlmap \
+wifite \
+outguess \
+steghide \
+set \
+recon-ng \
+responder \
+ngrok
 
 # Complementos para o Airgeddon
 
 sudo pacman -S \
+airgeddon \
 ettercap \
 hostapd-mana \
 dnsmasq \
