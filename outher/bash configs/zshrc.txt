@@ -1,10 +1,33 @@
 # Plugins
 source /usr/share/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
+
+## Evals ##
+
+# Zoxide
+eval "$(zoxide init zsh --cmd cd)"
+
+# Starship
+# eval "$(starship init zsh)"
+
+# Syntax highlighting por último
 source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
-# Prompt estilo Kali clássico: user@host:path# (em cores)
+# Prompt
 PROMPT='%F{%(#.red.blue)}%n@%m%f:%F{%(#.red.blue)}%~%f%# '
 
-alias msf='msfdb start && msfconsole'
+## Alias ##
 
-eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv zsh)"
+# Metasploit
+alias msf="msfdb start && msfconsole"
+
+# SET
+alias setoolkit="sudo setoolkit"
+
+# Airgeddon
+alias airgeddon="sudo airgeddon"
+
+# LS
+alias ls="eza --icons --group-directories-first"
+alias ll="eza -lh --icons --git --group-directories-first"
+alias la="eza -lha --icons --git --group-directories-first"
+alias lt="eza --tree --level=2 --icons"
