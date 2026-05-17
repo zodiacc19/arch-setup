@@ -29,6 +29,30 @@ sudo pacman -Syu
 
 sudo pacman -S bettercap amass sherlock dnsmap dnsenum theharvester subfinder wafw00f aircrack-ng sqlmap wifite outguess steghide set recon-ng hashid evil-winrm ngrok responder
 
+
+# Complementos para o Airgeddon
+
+sudo pacman -S \
+ettercap \
+hostapd-mana \
+dnsmasq \
+hostapd-wpe \
+hcxtools \
+bully \
+pixiewps \
+asleap \
+hashcat \
+hostapd \
+reaver \
+mdk4 \
+hcxdumptool \
+lighttpd
+
+
+
+
+
+
 # Tools Black Arch Avançadas ##
 ------------------------------------------------------------------------------------------------------------------------
 
