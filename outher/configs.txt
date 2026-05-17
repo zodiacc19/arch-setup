@@ -47,7 +47,9 @@ reaver \
 mdk4 \
 hcxdumptool \
 lighttpd \
-crunch
+crunch \
+dhcp \
+beef
 
 
 # Tools Black Arch Avançadas ##
