@@ -44,7 +44,8 @@ set \
 recon-ng \
 responder \
 ngrok \
-crunch
+crunch \
+sherlock
 
 # Complementos para o Airgeddon
 
