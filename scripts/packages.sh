@@ -28,6 +28,7 @@ PACMAN_PKGS=(
   exfatprogs
   ntfs-3g
   net-tools
+  reflector
   speech-dispatcher
   btop
 
