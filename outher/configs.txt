@@ -20,24 +20,6 @@ curl -O https://blackarch.org/strap.sh && \
 chmod +x strap.sh && \
 sudo ./strap.sh && \
 sudo pacman -Syu
-sudo pacman -S \
-bettercap \
-amass \
-dnsmap \
-dnsenum \
-dnsmasq \
-theharvester \
-subfinder \
-wafw00f \
-aircrack-ng \
-sqlmap \
-wifite \
-outguess \
-steghide \
-set \
-recon-ng \
-responder \
-ngrok
 
 ## Pacotes Black Arch ##
 ------------------------------------------------------------------------------------------------------------------------
@@ -61,7 +43,8 @@ steghide \
 set \
 recon-ng \
 responder \
-ngrok
+ngrok \
+crunch
 
 # Complementos para o Airgeddon
 
