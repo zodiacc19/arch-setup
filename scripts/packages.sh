@@ -29,6 +29,7 @@ PACMAN_PKGS=(
   ntfs-3g
   net-tools
   reflector
+  pacman-contrib
   speech-dispatcher
   btop
 
