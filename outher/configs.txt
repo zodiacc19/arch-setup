@@ -70,7 +70,7 @@ dhcp \
 beef
 
 
-# Tools Black Arch Avançadas ##
+## Tools Black Arch Avançadas ##
 ------------------------------------------------------------------------------------------------------------------------
 
 sudo pacman -S \
@@ -115,14 +115,18 @@ docker run -d \
   -v portainer_data:/data \
   portainer/portainer-ce:latest
 
+# Reflector
 ------------------------------------------------------------------------------------------------------------------------
 
 
 sudo reflector --verbose --country Brazil --latest 10 --sort rate --save /etc/pacman.d/mirrorlist
 
+ou:
+
+sudo reflector --verbose -c BR -c US -c CL --age 12 --protocol https --sort rate --latest 20 --save /etc/pacman.d/mirrorlist
+
+depois:
+
 cat /etc/pacman.d/mirrorlist
 
 ------------------------------------------------------------------------------------------------------------------------
-
-
-
