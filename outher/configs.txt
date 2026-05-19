@@ -45,7 +45,8 @@ recon-ng \
 responder \
 ngrok \
 crunch \
-sherlock
+sherlock \
+metagoofil
 
 # Complementos para o Airgeddon
 
