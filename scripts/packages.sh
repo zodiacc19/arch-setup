@@ -55,6 +55,7 @@ PACMAN_PKGS=(
   zsh
   zsh-autosuggestions
   zsh-syntax-highlighting
+  zsh-history-substring-search
 
   # Desenvolvimento / Programação  
   jdk11-openjdk
