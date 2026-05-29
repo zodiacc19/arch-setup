@@ -58,7 +58,7 @@ PACMAN_PKGS=(
   zsh-history-substring-search
 
   # Desenvolvimento / Programação  
-  jdk11-openjdk
+  jdk25-openjdk
   jdk-openjdk
   rust
   php
