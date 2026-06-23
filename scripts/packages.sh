@@ -61,8 +61,6 @@ PACMAN_PKGS=(
   jdk25-openjdk
   jdk-openjdk
   rust
-  php
-  lazygit
   nodejs
   nvm
   npm
@@ -73,9 +71,6 @@ PACMAN_PKGS=(
   docker
   docker-compose
   lazydocker
-  kubectl
-  minikube
-  helm
 
   # Segurança / Hacking
   nmap
