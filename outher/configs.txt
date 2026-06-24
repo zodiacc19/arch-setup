@@ -130,4 +130,12 @@ depois:
 
 cat /etc/pacman.d/mirrorlist
 
+# Fastfetch Mint
 ------------------------------------------------------------------------------------------------------------------------
+
+sudo add-apt-repository ppa:zhangsongcui3371/fastfetch
+sudo apt update
+sudo apt install fastfetch
+
+------------------------------------------------------------------------------------------------------------------------
+
