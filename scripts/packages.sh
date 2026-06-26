@@ -72,6 +72,8 @@ PACMAN_PKGS=(
   lazydocker
 
   # Segurança / Hacking
+  aircrack-ng
+  wifite
   nmap
   nikto
   tcpdump
@@ -85,6 +87,9 @@ PACMAN_PKGS=(
   keepassxc
   whois
   gobuster
+  bettercap
+  sqlmap
+  
   
   # Navegadores
   chromium
