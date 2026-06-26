@@ -47,6 +47,7 @@ PACMAN_PKGS=(
 
   # Shells 
   fish
+  fisher
   fzf
   eza
   less
@@ -89,7 +90,7 @@ PACMAN_PKGS=(
   gobuster
   bettercap
   sqlmap
-  
+  dnsmasq
   
   # Navegadores
   chromium
