@@ -27,17 +27,12 @@ sudo pacman -Syu
 # Tools Black Arch Básicas - (Recomendado)
 
 sudo pacman -S \
-bettercap \
 amass \
 dnsmap \
 dnsenum \
-dnsmasq \
 theharvester \
 subfinder \
 wafw00f \
-aircrack-ng \
-sqlmap \
-wifite \
 outguess \
 steghide \
 set \
