@@ -76,6 +76,7 @@ PACMAN_PKGS=(
   aircrack-ng
   wifite
   nmap
+  rustscan
   nikto
   tcpdump
   medusa
