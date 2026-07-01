@@ -95,6 +95,7 @@ PACMAN_PKGS=(
   dnsmasq
   zaproxy
   rkhunter
+  foremost
   
   # Navegadores
   chromium
