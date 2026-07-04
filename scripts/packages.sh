@@ -93,7 +93,6 @@ PACMAN_PKGS=(
   gobuster
   bettercap
   sqlmap
-  dnsmasq
   rkhunter
   foremost
   
