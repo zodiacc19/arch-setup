@@ -84,6 +84,7 @@ PACMAN_PKGS=(
   exploitdb
   hydra
   openbsd-netcat
+  p0f
   wireshark-qt
   metasploit
   veracrypt
