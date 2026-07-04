@@ -41,7 +41,8 @@ responder \
 ngrok \
 crunch \
 sherlock \
-metagoofil
+metagoofil \
+nettacker
 
 # Complementos para o Airgeddon
 
