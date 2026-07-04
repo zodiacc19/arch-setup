@@ -94,7 +94,6 @@ PACMAN_PKGS=(
   bettercap
   sqlmap
   dnsmasq
-  zaproxy
   rkhunter
   foremost
   
