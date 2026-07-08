@@ -42,7 +42,8 @@ ngrok \
 crunch \
 sherlock \
 metagoofil \
-nettacker
+nettacker \
+hash-identifier
 
 # Complementos para o Airgeddon
 
