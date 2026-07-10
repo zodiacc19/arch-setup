@@ -95,6 +95,8 @@ PACMAN_PKGS=(
   sqlmap
   rkhunter
   foremost
+  ncrack
+  gef
   
   # Navegadores
   chromium
