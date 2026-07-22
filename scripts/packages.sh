@@ -158,7 +158,6 @@ AUR_PKGS=(
   virtualbox-ext-oracle
   brave-bin
   caido-desktop
-  google-chrome
   jetbrains-toolbox
   dropbox
   spotify
