@@ -106,13 +106,11 @@ PACMAN_PKGS=(
   # Bancos de dados
   postgresql
 
-  # Design / Suíte Office
+  # Design
   gimp
   inkscape
   krita
-  libreoffice-fresh
-  libreoffice-fresh-pt-br
-
+  
   # Áudio / Vídeo
   audacity
   reaper
