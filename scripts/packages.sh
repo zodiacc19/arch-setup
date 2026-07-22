@@ -76,6 +76,7 @@ PACMAN_PKGS=(
   aircrack-ng
   wifite
   nmap
+  ncrack
   wpscan
   rustscan
   nikto
@@ -84,8 +85,6 @@ PACMAN_PKGS=(
   exploitdb
   hydra
   openbsd-netcat
-  p0f
-  lynis
   wireshark-qt
   metasploit
   veracrypt
@@ -94,10 +93,7 @@ PACMAN_PKGS=(
   gobuster
   bettercap
   sqlmap
-  rkhunter
   foremost
-  ncrack
-  gef
   
   # Navegadores
   chromium
