@@ -143,6 +143,8 @@ PACMAN_PKGS=(
 
 # Lista de pacotes do AUR
 AUR_PKGS=(
+  epson-inkjet-printer-escpr
+  epson-printer-utility
   localsend-bin
   windscribe-v2-bin
   visual-studio-code-bin
