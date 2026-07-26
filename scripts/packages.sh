@@ -127,9 +127,6 @@ PACMAN_PKGS=(
   libdvdnav
 
   # Virtualização
-  virtualbox
-  virtualbox-host-modules-arch
-  virtualbox-guest-iso
 
   # Emulação / Wine
   wine
@@ -149,7 +146,6 @@ AUR_PKGS=(
   localsend-bin
   windscribe-v2-bin
   visual-studio-code-bin
-  virtualbox-ext-oracle
   brave-bin
   caido-desktop
   jetbrains-toolbox
