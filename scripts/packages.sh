@@ -80,6 +80,7 @@ PACMAN_PKGS=(
   wpscan
   rustscan
   nikto
+  perl-xml-writer
   tcpdump
   medusa
   exploitdb
