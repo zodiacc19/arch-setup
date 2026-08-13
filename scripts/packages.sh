@@ -28,7 +28,6 @@ PACMAN_PKGS=(
   exfatprogs
   ntfs-3g
   net-tools
-  reflector
   pacman-contrib
   speech-dispatcher
   btop
@@ -114,7 +113,6 @@ PACMAN_PKGS=(
   
   # Áudio / Vídeo
   audacity
-  reaper
   ffmpeg
   ffmpegthumbs
   gst-plugins-good
