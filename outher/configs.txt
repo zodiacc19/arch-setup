@@ -4,8 +4,6 @@
 sudo usermod -aG docker $USER && \
 sudo systemctl start docker.service && \
 sudo systemctl enable docker.service && \
-sudo modprobe vboxdrv && \
-sudo usermod -aG vboxusers $USER && \
 sudo usermod -aG wireshark $USER && \
 sudo -iu postgres initdb --locale $LANG -D /var/lib/postgres/data && \
 sudo systemctl start postgresql && \
