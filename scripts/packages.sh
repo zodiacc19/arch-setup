@@ -145,6 +145,7 @@ AUR_PKGS=(
   epson-inkjet-printer-escpr
   epson-printer-utility
   localsend-bin
+  ente-auth-bin
   windscribe-v2-bin
   visual-studio-code-bin
   brave-bin
