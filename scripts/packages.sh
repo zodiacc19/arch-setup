@@ -65,6 +65,7 @@ PACMAN_PKGS=(
   npm
   typescript
   neovim
+  proton-vpn-cli
 
   # Containers / DevOps
   docker
