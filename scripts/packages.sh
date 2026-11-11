@@ -34,7 +34,7 @@ PACMAN_PKGS=(
 
   # Apps KDE
   bazaar
-  kdenlive
+  obsidian
   okular
   gwenview
   korganizer
