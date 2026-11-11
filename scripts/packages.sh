@@ -149,7 +149,6 @@ AUR_PKGS=(
   windscribe-v2-bin
   visual-studio-code-bin
   brave-bin
-  jetbrains-toolbox
   dropbox
   spotify
 )
