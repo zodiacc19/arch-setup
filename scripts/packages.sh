@@ -60,6 +60,7 @@ PACMAN_PKGS=(
   # Desenvolvimento / Programação  
   jdk25-openjdk
   rust
+  rust-src
   nodejs
   nvm
   npm
@@ -103,6 +104,7 @@ PACMAN_PKGS=(
   # Comunicação
   discord
   telegram-desktop
+  signal-desktop
   
   # Bancos de dados
   postgresql
