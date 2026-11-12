@@ -140,7 +140,7 @@ PACMAN_PKGS=(
   qbittorrent
 
   # IA
-  gemini-cli
+  opencode
 )
 
 # Lista de pacotes do AUR
