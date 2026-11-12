@@ -104,7 +104,6 @@ PACMAN_PKGS=(
   # Comunicação
   discord
   telegram-desktop
-  signal-desktop
   
   # Bancos de dados
   postgresql
@@ -149,7 +148,6 @@ AUR_PKGS=(
   epson-printer-utility
   localsend-bin
   ente-auth-bin
-  windscribe-v2-bin
   visual-studio-code-bin
   brave-bin
   dropbox
