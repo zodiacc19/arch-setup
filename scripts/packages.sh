@@ -37,7 +37,7 @@ PACMAN_PKGS=(
   obsidian
   okular
   gwenview
-  korganizer
+  merkuro
   kcalc
   filelight
   partitionmanager
@@ -76,30 +76,20 @@ PACMAN_PKGS=(
 
   # Segurança / Hacking
   aircrack-ng
-  wifite
   nmap
-  ncrack
-  wpscan
   rustscan
-  nikto
-  perl-xml-writer
-  tcpdump
-  medusa
-  exploitdb
-  hydra
   openbsd-netcat
-  wireshark-qt
+  exploitdb
   metasploit
+  sqlmap
+  whois
+  wireshark-qt
   veracrypt
   keepassxc
-  whois
+  hydra
   gobuster
-  bettercap
-  sqlmap
-  foremost
   
   # Navegadores
-  chromium
   torbrowser-launcher
   
   # Comunicação
@@ -150,7 +140,6 @@ AUR_PKGS=(
   localsend-bin
   ente-auth-bin
   visual-studio-code-bin
-  brave-bin
   dropbox
   spotify
 )
