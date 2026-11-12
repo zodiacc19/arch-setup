@@ -64,6 +64,7 @@ PACMAN_PKGS=(
   nodejs
   nvm
   npm
+  php
   typescript
   neovim
   proton-vpn-cli
