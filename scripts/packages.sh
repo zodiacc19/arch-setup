@@ -73,6 +73,7 @@ PACMAN_PKGS=(
   docker
   docker-compose
   lazydocker
+  lazygit
 
   # Segurança / Hacking
   aircrack-ng
