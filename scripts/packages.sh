@@ -97,6 +97,7 @@ PACMAN_PKGS=(
   # Comunicação
   discord
   telegram-desktop
+  signal-desktop
   
   # Bancos de dados
   postgresql
