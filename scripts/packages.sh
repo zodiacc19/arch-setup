@@ -145,7 +145,6 @@ AUR_PKGS=(
   dropbox
   spotify
   claude-code
-  topgrade-bin
 )
 
 # Verifica se é root
