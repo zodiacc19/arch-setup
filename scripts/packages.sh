@@ -64,7 +64,6 @@ PACMAN_PKGS=(
   nodejs
   nvm
   npm
-  php
   typescript
   neovim
   proton-vpn-cli
@@ -88,6 +87,7 @@ PACMAN_PKGS=(
   veracrypt
   keepassxc
   hydra
+  foremost
   gobuster
   
   # Navegadores
@@ -96,7 +96,6 @@ PACMAN_PKGS=(
   # Comunicação
   discord
   telegram-desktop
-  signal-desktop
   
   # Bancos de dados
   postgresql
