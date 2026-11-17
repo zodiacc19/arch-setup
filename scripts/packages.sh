@@ -141,7 +141,6 @@ AUR_PKGS=(
   localsend-bin
   ente-auth-bin
   visual-studio-code-bin
-  dropbox
   spotify
   claude-code
 )
