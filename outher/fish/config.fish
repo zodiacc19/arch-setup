@@ -24,9 +24,6 @@ if status is-interactive
     alias lla="eza --icons -lah"
     alias lt="eza --icons --tree"
 
-    # Git
-    alias git="g"
-
     # SEToolkit
     alias setoolkit="sudo setoolkit"
 
