@@ -143,6 +143,7 @@ AUR_PKGS=(
   visual-studio-code-bin
   spotify
   claude-code
+  dropbox
 )
 
 # Verifica se é root
