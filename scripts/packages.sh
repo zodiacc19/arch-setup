@@ -146,6 +146,7 @@ AUR_PKGS=(
   spotify
   claude-code
   dropbox
+  ngrok
 )
 
 # Verifica se é root
