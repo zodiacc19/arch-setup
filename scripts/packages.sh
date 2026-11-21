@@ -59,8 +59,10 @@ PACMAN_PKGS=(
 
   # Desenvolvimento / Programação  
   jdk25-openjdk
+  jdk-openjdk
   rust
   rust-src
+  mise
   nodejs
   nvm
   npm
