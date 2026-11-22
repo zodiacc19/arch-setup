@@ -145,8 +145,11 @@ AUR_PKGS=(
   visual-studio-code-bin
   spotify
   claude-code
+  openai-codex-bin
   dropbox
   ngrok
+  brave-bin
+  
 )
 
 # Verifica se é root
