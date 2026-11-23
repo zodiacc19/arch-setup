@@ -43,6 +43,7 @@ PACMAN_PKGS=(
   partitionmanager
   elisa
   kid3
+  flatseal
 
   # Shells 
   fish
@@ -58,8 +59,8 @@ PACMAN_PKGS=(
   zsh-history-substring-search
 
   # Desenvolvimento / Programação  
-  jdk25-openjdk
   jdk-openjdk
+  jdk25-openjdk
   rust
   rust-src
   mise
