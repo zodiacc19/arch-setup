@@ -132,5 +132,36 @@ sudo add-apt-repository ppa:zhangsongcui3371/fastfetch
 sudo apt update
 sudo apt install fastfetch
 
+
+
+
+
+
+
+# Fedora
+------------------------------------------------------------------------------------------------------------------------
+
+sudo dnf install \
+https://download1.rpmfusion.org/free/fedora/rpmfusion-free-release-$(rpm -E %fedora).noarch.rpm \
+https://download1.rpmfusion.org/nonfree/fedora/rpmfusion-nonfree-release-$(rpm -E %fedora).noarch.rpm
+
+
+sudo dnf upgrade --refresh
+
+
+sudo dnf install dnf-plugins-core
+
+sudo dnf config-manager addrepo --from-repofile=https://brave-browser-rpm-release.s3.brave.com/brave-browser.repo
+
+sudo dnf install brave-browser
+
+
+https://docs.docker.com/desktop/setup/install/linux/fedora/
+
+
+sudo usermod -aG docker $USER && \
+sudo systemctl start docker.service && \
+sudo systemctl enable docker.service
+
 ------------------------------------------------------------------------------------------------------------------------
 
