@@ -63,13 +63,11 @@ PACMAN_PKGS=(
   jdk25-openjdk
   rust
   rust-src
-  mise
   nodejs
   nvm
   npm
   typescript
   neovim
-  proton-vpn-cli
 
   # Containers / DevOps
   docker
@@ -150,6 +148,7 @@ AUR_PKGS=(
   dropbox
   ngrok
   brave-bin
+  windscribe-v2-bin
   
 )
 
