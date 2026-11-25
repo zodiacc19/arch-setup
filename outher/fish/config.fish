@@ -14,6 +14,9 @@ if status is-interactive
 
     ## Aliases ##
 
+    # Clear
+    alias cls="clear"
+
     # Zoxide
     alias cd="z"
 
@@ -36,3 +39,6 @@ if status is-interactive
 end
 
 # fish_add_path /home/vinicius/.spicetify
+
+eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv fish)"
+mise activate fish | source
