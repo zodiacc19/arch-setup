@@ -68,6 +68,7 @@ PACMAN_PKGS=(
   npm
   typescript
   neovim
+  mise
 
   # Containers / DevOps
   docker
