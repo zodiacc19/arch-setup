@@ -149,7 +149,6 @@ AUR_PKGS=(
   ngrok
   brave-bin
   windscribe-v2-bin
-  
 )
 
 # Verifica se é root
