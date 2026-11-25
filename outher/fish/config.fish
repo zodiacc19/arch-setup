@@ -39,6 +39,4 @@ if status is-interactive
 end
 
 # fish_add_path /home/vinicius/.spicetify
-
-eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv fish)"
 mise activate fish | source
