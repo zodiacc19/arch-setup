@@ -68,7 +68,6 @@ PACMAN_PKGS=(
   npm
   typescript
   neovim
-  mise
 
   # Containers / DevOps
   docker
@@ -145,7 +144,6 @@ AUR_PKGS=(
   visual-studio-code-bin
   spotify
   claude-code
-  openai-codex-bin
   dropbox
   ngrok
   brave-bin
