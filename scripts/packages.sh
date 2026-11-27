@@ -66,6 +66,7 @@ PACMAN_PKGS=(
   nodejs
   nvm
   npm
+  zed
   typescript
   neovim
 
