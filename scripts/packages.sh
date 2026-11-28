@@ -62,7 +62,9 @@ PACMAN_PKGS=(
   jdk-openjdk
   rust
   rust-src
+  rust-analyzer
   go
+  gopls
   nodejs
   nvm
   npm
