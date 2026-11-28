@@ -149,6 +149,9 @@ AUR_PKGS=(
   claude-code
   dropbox
   ngrok
+  herdr-app-bin
+  herdr-bin
+  herdr-core-bin
   brave-bin
   windscribe-v2-bin
 )
